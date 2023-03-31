@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOX</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </head>
+  <body>
+    <!-- просьба перевернуть устройство -->
+    <div class="mustrotate">
+      <div class="moveback1port cover pos"></div>
+      <div class="moveback2port cover pos"></div>
+      <div class="request">
+        <div class="vector cover pos"></div>
+        <div class="uforotate cover pos"></div>
+      </div>
+    </div>
+    <div class="container">
+    <!-- главный экран -->
+      <div class="mainscreen">
+        <div class="moveback1 cover pos"></div>
+        <div class="moveback2 cover pos"></div>
+        <div class="moveback3 cover pos"></div>
+        <div class="plates">
+          <div class="smallplate cover fly3 pos"></div>
+          <div class="midplate cover fly2 pos"></div>
+          <div class="bigplate bigplatemove cover fly1 pos"></div>
+        </div>
+        <div class="onplate pos"></div>
+        <div class="onplate2 pos"></div>
+        <div class="onplate3 pos"></div>
+        <div class="crazys">
+          <img class="crazy1 pos" src="images/crazy1.svg" alt="">
+          <img class="crazy2 pos" src="images/crazy2.svg" alt="">
+          <img class="crazy3 pos" src="images/crazy3.svg" alt="">
+          <img class="crazy4 pos" src="images/crazy4.svg" alt="">
+          <img class="crazy5 pos" src="images/crazy5.svg" alt="">
+          <img class="crazy6 pos" src="images/crazy6.svg" alt="">
+        </div>
+        <div class="windows">
+          <div class="windowgame1 pos"></div>
+          <div class="windowgame2 pos"></div>
+          <div class="windowgame3 pos"></div>
+        </div>
+        <div class="ufo cover fly1 pos"></div>
+        <div class="fork cover pos"></div>
+        <div class="knife cover pos"></div>
+        <div class="talking1 bubble1 cover fly1 pos"></div>
+        <div class="onpanel1 pos">
+          <div class="touches touch20 cover" onclick="window.location.reload(true)"></div>
+          <div class="touches touch30 cover"></div>
+        </div>
+      </div>
+    </div>
+    <!-- мини-игра 1 -->
+    <div class="minigame1reload none pos"></div>
+    <div class="minigame1 none pos">
+      <div class="moveback1 cover pos"></div>
+      <div class="bigplate bigplateminigame cover pos"></div>
+      <div class="allisonplate pos">
+        <div class="o1 cover pos"></div>
+        <div class="o2 cover pos"></div>
+        <div class="o3 cover pos"></div>
+        <div class="o4 cover pos"></div>
+        <div class="o9 cover pos"></div>
+        <div class="o10 cover pos"></div>
+        <div class="o11 cover pos"></div>
+        <div class="o12 cover pos"></div>
+        <div class="o13 cover pos"></div>
+        <div class="o14 cover pos"></div>
+        <div class="o5 cover pos"></div>
+        <div class="o6 cover pos"></div>
+        <div class="o7 cover pos"></div>
+        <div class="o8 cover pos"></div>
+        <div class="o16 cover pos"></div>
+        <div class="o17 cover pos"></div>
+        <div class="o18 cover pos"></div>
+        <div class="o19 cover pos"></div>
+        <div class="o20 cover pos"></div>
+        <div class="o21 cover pos"></div>
+        <div class="o22 cover pos"></div>
+        <div class="o23 cover pos"></div>
+      </div>
+      <div class="talking2 bubble2 cover pos"></div>
+      <div class="onpanel1 pos">
+        <div class="touches touch21 cover"></div>
+        <div class="touches touch31 cover"></div>
+      </div>
+    </div>
+    <!-- мини-игра 2 -->
+    <div class="minigame2 none pos">
+      <div class="moveback1 cover pos"></div>
+      <div id="box">
+        <div id="onep" class="moveDot"></div>
+        <div id="oneb" class="moveDot"></div>
+        <div id="oney" class="moveDot"></div>
+        <div id="oner" class="moveDot"></div>
+        <div id="oneyyyyyyy" class="moveDot"></div>
+        <div id="tworrr" class="moveDot"></div>
+        <div id="onebb" class="moveDot"></div>
+        <div id="twop" class="moveDot"></div>
+        <div id="twoppp" class="moveDot"></div>
+        <div id="onepppppp" class="moveDot"></div>
+        <div id="twopp" class="moveDot"></div>
+        <div id="twor" class="moveDot"></div>
+      </div>
+      <div class="talking3 bubble3 cover pos"></div>
+      <div class="onpanel1 pos">
+        <div class="touches touch22 cover"></div>
+        <div class="touches touch32 cover"></div>
+      </div>
+    </div>
+    <!-- мини-игра 3 -->
+    <div class="minigame3 none pos">
+      <div class="moveback1 cover pos"></div>
+      <div class="moveback2 cover pos"></div>
+      <div class="stars">
+        <div class="star1 cover none pos"></div>
+        <div class="star2 cover none pos"></div>
+        <div class="star3 cover none pos"></div>
+        <div class="star4 cover none pos"></div>
+        <div class="star5 cover none pos"></div>
+        <div class="star6 cover none pos"></div>
+        <div class="star7 cover none pos"></div>
+        <div class="star8 cover none pos"></div>
+      </div>
+      <div class="prophecyhere none pos">
+        <div class="moveback1 cover pos"></div>
+        <div class="moveback2 cover pos"></div>
+        <div class="cosmopolit pcosmopolit cover"></div>
+        <div class="oort poort cover"></div>
+        <div class="glazki pglazki cover"></div>
+        <div class="puzirek ppuzirek cover"></div>
+        <div class="piki ppiki cover"></div>
+        <div class="onpanel1 pos">
+          <div class="touches touch23 cover"></div>
+          <div class="touches touch33 cover"></div>
+        </div>
+      </div>
+      <div class="moving">
+        <div class="prophecy pos">
+          <div class="cosmopolit cover"></div>
+          <div class="oort cover"></div>
+          <div class="glazki cover"></div>
+          <div class="puzirek cover"></div>
+          <div class="piki cover"></div>
+        </div>
+        <div class="prophecy2 pos">
+          <div class="cosmopolit cover"></div>
+          <div class="oort cover"></div>
+          <div class="glazki cover"></div>
+          <div class="puzirek cover"></div>
+          <div class="piki cover"></div>
+        </div>
+      </div>
+      <div class="talking4 bubble4 cover pos"></div>
+      <div class="onpanel1 pos">
+        <div class="touches touch23 cover"></div>
+        <div class="touches touch33 cover"></div>
+      </div>
+    </div>
+    <script src="js/code.js"></script>
+  </body>
+</html>

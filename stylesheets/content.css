@@ -1,0 +1,724 @@
+/* общие параметры */
+html {
+  background-color: #060C1C;
+  transition: all .6s ease;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  cursor: url('../images/cursor.png'), auto;
+}
+.container {
+  position: relative;
+  max-width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.screen {
+  width: 100vw;
+  height: 70.56vw;
+}
+.pos {position: absolute;}
+.none {display: none;}
+
+/* кастомный скроллбар */
+::-webkit-scrollbar {
+  width: 0.78vw;
+  height: 0vw;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #393E50;
+  border-radius: 8vw;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+/* главный экран */
+.mainscreen {
+  position: relative;
+  width: 100vw;
+  height: 70.56vw;
+}
+.mustrotate {
+  position: relative;
+  width: 100vw;
+  height: 177vw;
+}
+.moveback1 {
+  width: 205.81vw;
+  height: 148.10vw;
+  background-image: url('../images/background1.svg');
+}
+.moveback2 {
+  width: 179.80vw;
+  height: 128.67vw;
+  background-image: url('../images/background2.svg');
+}
+.moveback3 {
+  top: 0vw;
+  left: 0vw;
+  width: 194.60vw;
+  height: 120.12vw;
+  background-image: url('../images/background3.svg');
+}
+.smallplate {
+  width: 21.57vw;
+  height: 21.29vw;
+  left: 73.55vw;
+  top: 6.05vw;
+  background-image: url('../images/smallplate.svg');
+}
+.midplate {
+  height: 38.71vw;
+  width: 38.15vw;
+  left: 0.48vw;
+  top: 0.73vw;
+  background-image: url('../images/midplate.svg');
+}
+.bigplate {
+  background-image: url('../images/bigplate.svg');
+}
+.bigplatemove {
+  width: 39.56vw;
+  height: 39.31vw;
+  left: 33.59vw;
+  top: 20.65vw;
+}
+.crazy1, .crazy4 {
+  width: 18.06vw;
+  height: 17.26vw;
+  left: 44.23vw;
+  top: 31.21vw;
+}
+.crazy2, .crazy5 {
+  width: 14.15vw;
+  height: 11.73vw;
+  left: 12.06vw;
+  top: 14.52vw;
+}
+.crazy3, .crazy6 {
+  width: 10.44vw;
+  height: 9.6vw;
+  left: 79.31vw;
+  top: 11.65vw;
+}
+.ufo {
+  width: 11.9vw;
+  height: 13.19vw;
+  left: 45.81vw;
+  top: 8.5vw;
+  background-image: url('../images/ufo.svg');
+}
+.fork {
+  width: 16.33vw;
+  height: 29.64vw;
+  left: 14.2vw;
+  top: 37.86vw;
+  background-image: url('../images/fork.svg');
+}
+.knife {
+  width: 14.55vw;
+  height: 31.84vw;
+  left: 76.7vw;
+  top: 30.56vw;
+  background-image: url('../images/knife.svg');
+}
+.talking1 {
+  left: 59vw;
+  top: 7vw;
+}
+.bubble1 {
+  width: 20vw;
+  height: 9.7vw;
+  background-image: url('../images/bubble1.svg');
+}
+.onpanel1 {
+  display: flex;
+  width: 12.5vw;
+  top: 63.51vw;
+  left: 46vw;
+}
+.touches {
+  margin: 0 auto;
+  width: 5.7vw;
+  height: 4.64vw;
+}
+.touch20 {
+  width: 6.2vw;
+  height: 4vw;
+  background-image: url('../images/touch2.svg');
+}
+.touch30 {
+  width: 4.7vw;
+  height: 3.9vw;
+  background-image: url('../images/touch3.svg');
+}
+.vector {
+  width: 45vw;
+  height: 44.8vw;
+  left: 28vw;
+  top: 30%;
+  background-image: url('../images/vector.svg');
+}
+.uforotate {
+  width: 17.9vw;
+  height: 21vw;
+  left: 41.81vw;
+  top: 36.5%;
+  background-image: url('../images/uforotate.svg');
+}
+.moveback1port {
+  width: 225.81vw;
+  height: 246.1vw;
+  background-image: url('../images/background1.svg');
+}
+.moveback2port {
+  width: 216.81vw;
+  height: 305.1vw;
+  background-image: url('../images/background2.svg');
+}
+
+/* мини-игра 1 */
+.minigame1 {
+  width: 100vw;
+  height: 70.56vw;
+  left: 0vw;
+  top: 0vw;
+  overflow: hidden;
+}
+.windowgame1 {
+  left: 33.5vw;
+  top: 21vw;
+  width: 39.56vw;
+  height: 39.31vw;
+}
+.minigame1reload {
+  width: 100vw;
+  height: 70.56vw;
+  left: 0vw;
+  top: 0vw;
+  overflow: hidden;
+  display: none;
+}
+.bigplateminigame {
+  width: 50.3vw;
+  height: 50vw;
+  left: 25.5vw;
+  top: 7vw;
+}
+.onplate {
+  left: 29.5vw;
+  top: 19vw;
+  width: 46.5vw;
+  height: 42.5vw;
+  overflow: hidden;
+}
+.allisonplate {
+  width: 50.3vw;
+  height: 50vw;
+  top: 1vw;
+  left: 1vw;
+}
+.onplate2 {
+  height: 38.71vw;
+  width: 38.15vw;
+  left: 0.48vw;
+  top: 0.73vw;
+}
+.o1 {
+  width: 20vw;
+  height: 18vw;
+  left: 4.5vw;
+  top: 0vw;
+  background-image: url('../images/1.png');
+}
+.o2 {
+  width: 21vw;
+  height: 21vw;
+  left: 2vw;
+  top: 19vw;
+  background-image: url('../images/2.png');
+}
+.o3 {
+  width: 18vw;
+  height: 22vw;
+  left: 2vw;
+  top: 37vw;
+  background-image: url('../images/3.png');
+}
+.o4 {
+  width: 20vw;
+  height: 20vw;
+  left: 11vw;
+  top: 52vw;
+  background-image: url('../images/4.png');
+}
+.o5 {
+  width: 22vw;
+  height: 21vw;
+  left: 69.5vw;
+  top: -1.8vw;
+  transform: rotate(-10deg);
+  background-image: url('../images/5.png');
+}
+.o6 {
+  width: 10.2vw;
+  height: 17vw;
+  left: 86.5vw;
+  top: 23vw;
+  background-image: url('../images/6.png');
+}
+.o7 {
+  width: 14vw;
+  height: 18vw;
+  left: 76vw;
+  top: 40.5vw;
+  background-image: url('../images/7.png');
+}
+.o8 {
+  width: 10vw;
+  height: 18vw;
+  left: 87.5vw;
+  top: 50vw;
+  background-image: url('../images/8.png');
+}
+.o9 {
+  width: 2vw;
+  height: 2vw;
+  left: 5.6vw;
+  top: 4vw;
+  background-image: url('../images/9.svg');
+}
+.o10 {
+  width: 1.55vw;
+  height: 1.5vw;
+  left: 26.5vw;
+  top: 9vw;
+  background-image: url('../images/10.svg');
+}
+.o11 {
+  width: 5vw;
+  height: 6vw;
+  left: 19vw;
+  top: 14vw;
+  background-image: url('../images/11.svg');
+}
+.o12 {
+  width: 6vw;
+  height: 6.8vw;
+  left: 3vw;
+  top: 16vw;
+  background-image: url('../images/12.svg');
+}
+.o13 {
+  width: 1.65vw;
+  height: 1.6vw;
+  left: 4.5vw;
+  top: 42vw;
+  background-image: url('../images/13.svg');
+}
+.o14 {
+  width: 2.5vw;
+  height: 3.2vw;
+  left: 22.5vw;
+  top: 47vw;
+  background-image: url('../images/14.svg');
+}
+.o15 {
+  width: 4vw;
+  height: 5vw;
+  left: 5.5vw;
+  top: 62.5vw;
+  background-image: url('../images/15.svg');
+}
+.o16 {
+  width: 1.9vw;
+  height: 1.8vw;
+  left: 90.5vw;
+  top: 3vw;
+  background-image: url('../images/16.svg');
+}
+.o17 {
+  width: 5vw;
+  height: 10.15vw;
+  left: 91.6vw;
+  top: 10vw;
+  background-image: url('../images/17.svg');
+}
+.o18 {
+  width: 3vw;
+  height: 4vw;
+  left: 81.5vw;
+  top: 19.5vw;
+  transform: rotate(-10deg);
+  background-image: url('../images/18.svg');
+}
+.o19 {
+  width: 1.55vw;
+  height: 1.5vw;
+  left: 82vw;
+  top: 29vw;
+  background-image: url('../images/19.svg');
+}
+.o20 {
+  width: 1.06vw;
+  height: 1vw;
+  left: 95vw;
+  top: 41.5vw;
+  background-image: url('../images/20.svg');
+}
+.o21 {
+  width: 3.7vw;
+  height: 4vw;
+  left: 91.5vw;
+  top: 43vw;
+  background-image: url('../images/21.svg');
+}
+.o22 {
+  width: 4.8vw;
+  height: 6vw;
+  left: 81vw;
+  top: 60vw;
+  background-image: url('../images/22.svg');
+}
+.o23 {
+  width: 6vw;
+  height: 6vw;
+  left: 71vw;
+  top: 60vw;
+  background-image: url('../images/23.svg');
+}
+.talking2 {
+  left: 46.6vw;
+  top: 49vw;
+}
+.bubble2 {
+  width: 18.75vw;
+  height: 12.93vw;
+  background-image: url('../images/bubble2.svg');
+}
+.touch21 {
+  width: 6.2vw;
+  height: 4vw;
+  background-image: url('../images/touch2.svg');
+}
+.touch31 {
+  width: 4.7vw;
+  height: 3.9vw;
+  background-image: url('../images/touch3.svg');
+}
+
+/* мини-игра 2 */
+.minigame2 {
+  width: 100vw;
+  height: 70.56vw;
+  left: 0vw;
+  top: 0vw;
+  overflow: hidden;
+  cursor: url('../images/target1.png'), auto;
+}
+.windowgame2 {
+  left: 4.48vw;
+  top: 4.73vw;
+  height: 30.71vw;
+  width: 30.15vw;
+}
+.target1 {
+  width: 9.72vw;
+  height: 9.72vw;
+  background-image: url('../images/target1.svg');
+}
+.talking3 {
+  left: 45.8vw;
+  top: 50.2vw;
+}
+.bubble3 {
+  width: 20vw;
+  height: 11.75vw;
+  background-image: url('../images/bubble3.svg');
+}
+.touch22 {
+  width: 6.2vw;
+  height: 4vw;
+  background-image: url('../images/touch2.svg');
+}
+.touch32 {
+  width: 4.7vw;
+  height: 3.9vw;
+  background-image: url('../images/touch3.svg');
+}
+#onep {
+  position: absolute;
+  top: -10vw;
+  left: -10vw;
+  width: 7.5vw;
+  height: 6.49vw;
+  background-image: url('../images/1p.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#oneb {
+  position: absolute;
+  top: -10vw;
+  left: -10vw;
+  width: 7.9vw;
+  height: 9.49vw;
+  background-image: url('../images/1b.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#oney {
+  position: absolute;
+  top: -10vw;
+  left: -10vw;
+  width: 7.5vw;
+  height: 6.49vw;
+  background-image: url('../images/1y.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#oner {
+  position: absolute;
+  top: -10vw;
+  left: -10vw;
+  width: 7.5vw;
+  height: 7.49vw;
+  background-image: url('../images/1r.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#oneyyyyyyy {
+  position: absolute;
+  top: -10vw;
+  left: -10vw;
+  width: 2.75vw;
+  height: 2.49vw;
+  background-image: url('../images/1yyyyyyy.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#tworrr {
+  position: absolute;
+  top: -10vw;
+  left: -10vw;
+  width: 4.9vw;
+  height: 4.6vw;
+  background-image: url('../images/2rrr.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#onebb {
+  position: absolute;
+  top: -10vw;
+  left: -10vw;
+  width: 3.1vw;
+  height: 3.49vw;
+  background-image: url('../images/1bb.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#twoppp {
+  position: absolute;
+  top: -10vw;
+  left: -10vw;
+  width: 6.5vw;
+  height: 7.49vw;
+  background-image: url('../images/2ppp.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#twor {
+  position: absolute;
+  top: -2vw;
+  left: -2vw;
+  width: 3.6vw;
+  height: 3.6vw;
+  background-image: url('../images/2r.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#twopp {
+  position: absolute;
+  top: -2vw;
+  left: -2vw;
+  width: 6.9vw;
+  height: 7.49vw;
+  background-image: url('../images/2pp.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#onepppppp {
+  position: absolute;
+  top: -2vw;
+  left: -2vw;
+  width: 7.012vw;
+  height: 6.371vw;
+  background-image: url('../images/1pppppp.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* мини-игра 3 */
+.minigame3 {
+  width: 100vw;
+  height: 70.56vw;
+  left: 0vw;
+  top: 0vw;
+  overflow: hidden;
+}
+.windowgame3 {
+  left: 73.55vw;
+  top: 6.05vw;
+  width: 21.57vw;
+  height: 21.29vw;
+}
+.star1 {
+  width: 2.22vw;
+  height: 2.06vw;
+  left: 25.48vw;
+  top: 15.40vw;
+  background-image: url('../images/star1.svg');
+}
+.star2 {
+  width: 4.60vw;
+  height: 4.48vw;
+  left: 25.48vw;
+  top: 25.60vw;
+  background-image: url('../images/star2.svg');
+}
+.star3 {
+  width: 2.26vw;
+  height: 2.34vw;
+  left: 17.30vw;
+  top: 36.17vw;
+  background-image: url('../images/star3.svg');
+}
+.star4 {
+  width: 3.83vw;
+  height: 3.75vw;
+  left: 26.81vw;
+  top: 46.98vw;
+  background-image: url('../images/star4.svg');
+}
+.star5 {
+  width: 3.63vw;
+  height: 3.35vw;
+  left: 73.15vw;
+  top: 15.60vw;
+  background-image: url('../images/star5.svg');
+}
+.star6 {
+  width: 2.30vw;
+  height: 2.02vw;
+  left: 80.40vw;
+  top: 26.21vw;
+  background-image: url('../images/star6.svg');
+}
+.star7 {
+  width: 4.84vw;
+  height: 5.69vw;
+  left: 73.15vw;
+  top: 32.82vw;
+  background-image: url('../images/star7.svg');
+}
+.star8 {
+  width: 2.34vw;
+  height: 2.34vw;
+  left: 70.85vw;
+  top: 48.87vw;
+  background-image: url('../images/star8.svg');
+}
+.prophecy {
+  display: flex;
+  width: 200vw;
+  left: 0vw;
+  top: 10vw;
+}
+.prophecy2 {
+  display: flex;
+  width: 200vw;
+  left: 200vw;
+  top: 10vw;
+}
+.oort {
+  width: 40.7vw;
+  height: 49.7vw;
+  background-image: url('../images/oort.png');
+}
+.glazki {
+  width: 37.7vw;
+  height: 49.7vw;
+  background-image: url('../images/glazki.png');
+}
+.piki {
+  width: 41vw;
+  height: 50vw;
+  background-image: url('../images/piki.png');
+}
+.puzirek {
+  width: 36.2vw;
+  height: 49.7vw;
+  background-image: url('../images/puzirek.png');
+}
+.cosmopolit {
+  width: 33.7vw;
+  height: 49.7vw;
+  background-image: url('../images/cosmopolit.png');
+}
+.prophecyhere {
+  width: 100vw;
+  height: 70.56vw;
+  left: 0vw;
+  top: 0vw;
+  overflow: hidden;
+}
+.poort {
+  position: absolute;
+  left: 31vw;
+  top: 9.3vw;
+}
+.pglazki {
+  position: absolute;
+  left: 31vw;
+  top: 9.5vw;
+}
+.ppiki {
+  position: absolute;
+  left: 30vw;
+  top: 10vw;
+}
+.ppuzirek {
+  position: absolute;
+  left: 31vw;
+  top: 10vw;
+}
+.pcosmopolit {
+  position: absolute;
+  left: 37vw;
+  top: 10vw;
+}
+.talking4 {
+  left: 43.2vw;
+  top: 49vw;
+}
+.bubble4 {
+  width: 25.5vw;
+  height: 12.92vw;
+  background-image: url('../images/bubble4.svg');
+}
+.touch23 {
+  width: 6.2vw;
+  height: 4vw;
+  background-image: url('../images/touch2.svg');
+}
+.touch33 {
+  width: 4.7vw;
+  height: 3.9vw;
+  background-image: url('../images/touch3.svg');
+}

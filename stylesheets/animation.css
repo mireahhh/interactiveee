@@ -1,0 +1,57 @@
+/* на экране-"перевертыше" */
+.vector {animation: rotation1 3s infinite;}
+@keyframes rotation1 {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(-180deg);}
+  100% {transform: rotate(-360deg);}
+}
+.uforotate {animation: rotation2 5s infinite;}
+@keyframes rotation2 {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+/* на главном экране */
+.crazy1 {animation: crazy123 2.1s infinite;}
+.crazy2 {animation: crazy123 2.2s infinite;}
+.crazy3 {animation: crazy123 2.3s infinite;}
+@keyframes crazy123 {
+  0% {opacity: 0; transform: translateY(0vw);}
+  50% {opacity: 1; transform: translateY(-1vw);}
+  100% {opacity: 0; transform: translateY(0vw);}
+}
+.crazy4 {animation: crazy456 2.1s infinite;}
+.crazy5 {animation: crazy456 2.2s infinite;}
+.crazy6 {animation: crazy456 2.3s infinite;}
+@keyframes crazy456 {
+  0% {opacity: 1; transform: translateY(0vw);}
+  50% {opacity: 0; transform: translateY(-1vw);}
+  100% {opacity: 1; transform: translateY(0vw);}
+}
+.fly1 {animation: fly 2.1s infinite ease-in-out;}
+.fly2, .fork {animation: fly 2.2s infinite ease-in-out;}
+.fly3, .knife {animation: fly 2.3s infinite ease-in-out;}
+@keyframes fly {
+  0% {transform: translateY(0vw);}
+  50% {transform: translateY(-1vw);}
+  100% {transform: translateY(0vw);}
+}
+
+/* на мини-игре 2 */
+@keyframes target1 {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes target2 {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* на мини-игре 3 */
+.prophecy, .prophecy2 {animation: scroll 6s infinite linear;}
+@keyframes scroll {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(-100%, 0);}
+}
